@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar Puzzle</title>
+  <subtitle> Author: Johnathan Finizio</subtitle>
+  <link rel="icon" href="logo2puzzle.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Calendar Puzzle</h1>
+    <div class="content">
+      <div class="instructions">
+        <h2>How to play:</h2>
+        <ul>
+          <li>Drag and drop the pieces onto the board</li>
+          <li>Click on a piece in the playing area to remove it</li>
+          <li>To rotate the piece, click on it in the work area and use the arrow keys</li>
+          <li>To flip the piece, click on it in the work area and use the space bar</li>
+          <li>Pieces cannot be placed such that they will go out of bounds, or cover the date</li>
+        </ul>
+        <div class="controls">
+          <button id="hintButton">Get Hint</button>
+          <button id="solutionButton">Solution</button>
+        </div>
+        <div id="hintMessage" style="font-weight: bold; color: blue; margin-top: 10px;"></div>
+      </div>
+      <div class="board-container">
+        <div id="board" class="board"></div>
+        <div id="pieces" class="pieces"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
